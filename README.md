@@ -198,6 +198,7 @@ heroku create users-groups-mern-jwt
 ```java
 heroku config:set
 
+
 heroku config:set MONGODB_URI="mongodb+srv://<userid>:<password>@cluster0.zadqe.mongodb.net/users-groups-mern-jwt?retryWrites=true&w=majority"
 heroku config:set JWT_SECRET="something-secret"
 
