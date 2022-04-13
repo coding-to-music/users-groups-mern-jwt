@@ -1,8 +1,16 @@
 {
-  "name": "mern-jwt-template",
+  "name": "users-groups-mern-jwt",
   "version": "0.2.0",
   "private": true,
   "type": "module",
+  "homepage": "https://users-groups-mern-jwt.herokuapp.com",
+  "engines": {
+    "node": "16.x"
+  },
+  "proxy": "http://localhost:3001",
+  "cacheDirectories": [
+    "node_modules"
+  ],
   "dependencies": {
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
@@ -31,7 +39,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "deploy": "git add . && git commit -m Heroku && git push && git push heroku && heroku logs --tail --remote heroku"
   },
   "eslintConfig": {
     "extends": [
@@ -50,6 +58,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "proxy": "http://localhost:3001"
+  }
 }
